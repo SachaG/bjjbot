@@ -85,3 +85,17 @@ Template.registerHelper('getDisplayName', function(userOrUserId) {
 Template.registerHelper('icon', function(iconName, iconClass) {
   return Telescope.utils.getIcon(iconName, iconClass);
 });
+
+Template.registerHelper('moduleClass', function() {
+  // to get the module class from within a module, we go back up 
+  // four steps to access the zone data
+  var zoneData = Template.parentData(4);
+  if (zoneData) {
+    // node: modules may not always be included from within a zone
+    var moduleClass = zoneData.zone + "-module ";
+    if (zoneData.moduleClass) {
+      moduleClass += zoneData.moduleClass;
+    }
+    return moduleClass;
+  }
+});

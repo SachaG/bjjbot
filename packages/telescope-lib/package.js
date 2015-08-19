@@ -1,7 +1,7 @@
 Package.describe({
   name: 'telescope:lib',
   summary: 'Telescope libraries.',
-  version: '0.22.2',
+  version: '0.23.1',
   git: "https://github.com/TelescopeJS/Telescope.git"
 });
 
@@ -46,7 +46,7 @@ Package.onUse(function (api) {
     'sacha:spin@2.3.1',
     'aslagle:reactive-table@0.8.11',
     'utilities:avatar@0.8.2',
-    'fortawesome:fontawesome@4.3.0',
+    'fortawesome:fontawesome@4.4.0',
     'ccan:cssreset@1.0.0',
     'djedi:sanitize-html@1.7.0',
     'dburles:collection-helpers@1.0.3',

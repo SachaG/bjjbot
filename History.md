@@ -1,3 +1,10 @@
+## v0.23.1
+
+* [BREAKING] Modules data context must now be passed on explicitely using the `moduleData` attribute. 
+* [BREAKING] Updated `category_title` template.
+* [BREAKING] Refactored `post_admin` template. Added delete link, now using icons, and moved post edit link from `post_info` to `post_admin`. 
+* When in debug mode, you can now log out information about a template to the console by clicking on it. 
+
 ## v0.23 “SubScope”
 
 * Template modules now take `only` and `except` options to only display on specific routes.
@@ -21,6 +28,12 @@
 * Added per-category RSS routes (thanks @lewisnyman!)
 * Now showing top comments in email newsletter (thanks @sungwoncho!)
 * Fixed blank URL edit bug (thanks @johnthepink!)
+* Added `.posts-day` wrapper in `posts-daily` template.
+* [BREAKING] menu label template must now be specified using `menuLabelTemplate` option in menu component.
+* Menu label template data context can now be specified using `menuLabelData` option. 
+* `user_menu` template and its helpers moved from `telescope:core` to `telescope:users`.
+* Now recalculating email hash whenever email changes.
+* Added user avatar to user menu in nav. 
 
 ## v0.22.2
 
