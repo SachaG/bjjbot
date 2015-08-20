@@ -118,6 +118,7 @@ spacebars-compiler@1.0.6
 spiderable@1.0.7
 srp@1.0.3
 standard-app-packages@1.0.5
+swpsub@0.1.0
 tap:i18n@1.5.1
 telescope:api@0.23.0
 telescope:comments@0.23.0

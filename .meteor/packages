@@ -42,3 +42,4 @@ telescope:update-prompt
 ############ Your Custom Packages ############
 
 telescope:zeiss
+swpsub
