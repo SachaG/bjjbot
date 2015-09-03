@@ -96,8 +96,10 @@ Meteor.methods({
     }));
   },
   insertCategories: function () {
-    Categories.remove({});
-    insertCategories();
+    if (Users.is.admin(this.userId)) {
+      Categories.remove({});
+      insertCategories();
+    }
   }
 });
 

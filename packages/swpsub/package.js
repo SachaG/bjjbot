@@ -35,6 +35,10 @@ Package.onUse(function (api) {
   api.addFiles([
     'lib/client/stylesheets/_categories.scss',
     'lib/client/stylesheets/screen.scss',
+
+    'lib/client/templates/post_categories.html',
+    'lib/client/templates/post_categories.js'
+
   ], ['client']);
 
   // server
