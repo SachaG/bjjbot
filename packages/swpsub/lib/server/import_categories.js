@@ -2,13 +2,6 @@ var tabdown = Npm.require('tabdown');
 
 /* -------------- Standard sub-categories -------------- */
 
-var topGuardCategories = ["Concepts & Grips", "Passes", "Submissions", "Transitions"];
-var bottomGuardCategories = ["Concepts & Grips", "Sweeps", "Submissions", "Transitions"];
-var positions = ["Side Control", "Mount", "Back", "Crucifix","Other Positions"];
-var topPositionCategories = ["Concepts & Grips", "Submissions", "Transitions"];
-var bottomPositionCategories = ["Concepts & Grips", "Escapes", "Submissions", "Transitions"];
-var submissions = ["Armlocks", "Leglocks", "Chokes", "Gi Chokes"];
-
 var getCategoryTree = function () {
   var categoriesTxt = Assets.getText("categories/categories.txt");
   var categoriesArray = categoriesTxt.split("\n");
@@ -24,8 +17,11 @@ var insertCategories = function () {
 
     node.children.forEach(function (node, index) {
       
+      console.log(node)
+
       var category = {
-        name: node.data, 
+        name: node.data.split("|")[0],
+        description: node.data.split("|")[1],
         order: index
       };
 
@@ -35,39 +31,10 @@ var insertCategories = function () {
         node.parentId = parentCategory._id;
       }
 
+      console.log(category)
+      
       var categoryId = Categories.insert(category);
       node._id = categoryId;
-
-      // Guards
-      if (node.parent && node.parent.data && node.parent.data === "Guard") {
-        // if we're in a “guard” category, insert top & bottom along with their subcategories
-        var topId = Categories.insert({name: "Top", parentId: categoryId});
-        var bottomId = Categories.insert({name: "Bottom", parentId: categoryId});
-        topGuardCategories.forEach(function (category) {
-          Categories.insert({name: category, parentId: topId});
-        });
-        bottomGuardCategories.forEach(function (category) {
-          Categories.insert({name: category, parentId: bottomId});
-        });
-      }
-
-      // Positions
-      if (_.contains(positions, category.name)) {
-        var topId = Categories.insert({name: "Top", parentId: categoryId});
-        var bottomId = Categories.insert({name: "Bottom", parentId: categoryId});
-        topPositionCategories.forEach(function (category) {
-          Categories.insert({name: category, parentId: topId});
-        });
-        bottomPositionCategories.forEach(function (category) {
-          Categories.insert({name: category, parentId: bottomId});
-        });
-      }
-
-      // Submissions
-      if (node.parent && node.parent.data && _.contains(submissions, node.parent.data)) {
-        Categories.insert({name: "Attack", parentId: categoryId});
-        Categories.insert({name: "Defense", parentId: categoryId});
-      }
 
       node.inserted = true;
 
@@ -97,6 +64,7 @@ Meteor.methods({
   },
   insertCategories: function () {
     if (Users.is.admin(this.userId)) {
+      console.log("// parsing & inserting categories…")
       Categories.remove({});
       insertCategories();
     }
