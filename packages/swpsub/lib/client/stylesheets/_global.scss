@@ -1,0 +1,10 @@
+.header{
+  @include medium-large{
+    width: 300px;
+  }
+}
+.inner-wrapper{
+  @include medium-large{
+    margin-left: 300px;
+  }
+}

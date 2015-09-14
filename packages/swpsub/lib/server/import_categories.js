@@ -9,7 +9,7 @@ var getCategoryTree = function () {
   return tree;
 };
 
-var insertCategories = function () {
+var importCategories = function () {
 
   var root = getCategoryTree();
 
@@ -17,24 +17,46 @@ var insertCategories = function () {
 
     node.children.forEach(function (node, index) {
       
-      console.log(node)
-
+      // console.log(node)
+      var nodeArray = node.data.split("|");
       var category = {
-        name: node.data.split("|")[0],
-        description: node.data.split("|")[1],
+        name: nodeArray[0],
         order: index
       };
 
-      if (node.parent && node.parent.data) {
-        var parentCategory = Categories.findOne(node.parent._id);
-        category.parentId = parentCategory._id;
-        node.parentId = parentCategory._id;
+      if (nodeArray.length >= 2) {
+        category.description = nodeArray[1];
       }
 
-      console.log(category)
-      
-      var categoryId = Categories.insert(category);
-      node._id = categoryId;
+      if (nodeArray.length >= 3) {
+        category.alias = nodeArray[2];
+      }
+
+      // look for an existing category with the same name
+      var existingCategory = Categories.findOne({name: category.name});
+
+      if (existingCategory) {
+
+        // if it exists, update it
+        console.log("// Category “"+category.name+"” already exists, updating…");
+        Categories.update(existingCategory._id, {$set: category});
+        node._id = existingCategory._id;
+
+      } else {
+        
+        // if it doesn't, create it
+        console.log("// Category “"+category.name+"” doesn't exist, creating…");
+        if (node.parent && node.parent.data) {
+          var parentCategory = Categories.findOne(node.parent._id);
+          category.parentId = parentCategory._id;
+          node.parentId = parentCategory._id;
+        }
+
+        // console.log(category)
+        
+        var categoryId = Categories.insert(category);
+        node._id = categoryId;
+      }
 
       node.inserted = true;
 
@@ -62,11 +84,11 @@ Meteor.methods({
       }
     }));
   },
-  insertCategories: function () {
+  importCategories: function () {
     if (Users.is.admin(this.userId)) {
       console.log("// parsing & inserting categories…")
-      Categories.remove({});
-      insertCategories();
+      // Categories.remove({});
+      importCategories();
     }
   }
 });

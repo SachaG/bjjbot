@@ -15,7 +15,8 @@ Package.onUse(function (api) {
 
   // --------------------------- 1. Meteor packages dependencies ---------------------------
 
-  api.use(['telescope:core@0.22.2']);
+  api.use(['telescope:core@0.24.0']);
+  api.use(['telescope:tags@0.24.0']);
 
   // ---------------------------------- 2. Files to include ----------------------------------
 
@@ -28,16 +29,21 @@ Package.onUse(function (api) {
   // both
 
   api.addFiles([
+    'lib/menus.js',
+    'lib/callbacks.js',
+    'lib/custom_fields.js'
   ], ['client', 'server']);
 
   // client
 
   api.addFiles([
+    'lib/client/stylesheets/_mixins.scss',
+    'lib/client/stylesheets/_global.scss',
     'lib/client/stylesheets/_categories.scss',
     'lib/client/stylesheets/screen.scss',
 
-    'lib/client/templates/post_categories.html',
-    'lib/client/templates/post_categories.js'
+    'lib/client/templates/categories/post_categories.html',
+    'lib/client/templates/categories/post_categories.js'
 
   ], ['client']);
 

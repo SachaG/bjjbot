@@ -1,13 +1,54 @@
-Type
-	Fights|Competition & tournament footage
-	Breakdowns|In-depth analysis and breakdowns
-	News|News, round-ups, announcements, and more
-	Highlights|Highlight reels
-	Techniques|Instructionals, seminars, and technique videos
-	AMAs|Question & Answer sessions
-Role
-	Attack|Initiating the move
-	Defense|Escaping & countering
+Positions
+	Stand-up|Every fight starts standing up
+		2-on-1|Zangief's favorite tie-up
+		Collar Tie|The basic tie-up
+		Double Overhooks|Better practice your Greco
+		Double Underhooks|The dominant clinch
+		Over-under|The basic clinch
+		Other Tie-ups|Ties of the neck, bow, and fighter varieties
+	Guard|Where's your Jiu-Jitsu now playboy?
+		Butterfly Guard|Marcelo's favorite guard
+		Closed Guard|Still effective
+			Regular Closed Guard|The foundation
+			Rubber Guard|The white belt's favorite guard
+			Shawn Williams Guard|Underhooking your own leg and framing with your arms
+			Other Closed Guards|More ways to control from the bottom
+		De La Riva|The king of modern guards|DLR
+		Double Guard|Or as they call it, “scissoring”
+		Half Guard|Also known as being half passed|Half-guard, Halfguard
+			Regular Half Guard|You probably don't want to be there
+			Deep Half|Homer Simpson's favorite guard
+			Inverted Half Guard|Half Guard facing the legs
+			Knee Shield|Using your knee to control the distance|93 Guard,Z-Guard,Z Guard
+			Reverse Half Guard|Reverse-sit back-step Half Guard
+			Other Half Guards|Three-quarter guard, four-fiths guard, seven-thirteenths guard, etc.
+		Reverse De La Riva|The queen of modern guards|Spiral Guard, RDLR
+		Sit-up Guard|Also known as Koala Guard, Shin-to-shin guard, etc.
+		Spider Guard & Lasso|Voted “Most Annoying To Pass” three years in a row|Spider, Lasso
+		Turtle|Don't let their slow demeanor fool you… Turtles can bite too!
+		Worm & Lapel Guard|And you thought Spider Guard was annoying
+		X-Guard & Single-Leg X|The most Xtreme guards|1LX,SLX,Single Leg X,XGuard,X Guard
+		Other Guards|Mouthguards, bodyguards, lifeguards, etc.
+	Side Control|Feel the presh'
+	Knee On Belly|Make'em pay
+	North South|Yes, we know what it looks like
+	Mount|Total domination
+	Back|Choke coming in 3, 2, 1…
+		Regular Back Control|Your vanilla back control
+		Body Triangle|For those who like to slowly suck the life out of their opponent
+		Crab Ride|Back control with both hooks behind the knees
+		Crucifix|He didn't tap
+		Single Back|Back control with a single hook
+		The Truck|Grapevining one leg and hugging the other
+		Other Back Controls|Quarterbacks, silverbacks, razorbacks, etc.
+	Leg Entanglements|Wait, is this your leg or mine?
+		50/50|Looks like we'll be here for a while
+		Ashi Garami|The standard IBJJF-legal leglock position
+		Inside Triangle|A.k.a. the 4/11, Saddle, and Knee Reap, Destroyer Of Worlds and Bringer Of Destruction
+		Outside Ashi Garami|Crossing over to the outside with your inside leg
+		Reverse Ashi|Switching around the hip-stepping foot and the hooking foot
+		Other Leg Entanglements|I'm 1/8th octopus on my mother's side
+	Other Positions|Half of these were created by Eddie Bravo
 Moves
 	Passes|Like a knife through butter
 		Back-step|Back-stepping your free leg into a reverse sit
@@ -26,16 +67,15 @@ Moves
 		Armlocks|Your arm is mine
 			Americana|The white belt killer
 			Armbar|Rickson by Armbar
-			Biceps Crush|Don't try to tough it out
+			Biceps Crush|Crushes your dreams, too
 			Kimura|No one before Kimura, no one after
 			Omoplata|Know for being hard to finish, and even harder to spell right
 			Straight Armlock|Did you just hear a pop?
-			Triangle|Named after its creator, Marcos Triangle
 			Other Armlocks|More ways to break arms
 		Leglocks|I'll have that ankle to go, thank you
 			Ankle Lock|Just a pain move
 			Heelhook|Proceed with caution
-			Knee Crush|Crushes your dreams, too
+			Calf Lock|Don't try to tough it out
 			Kneebar|Bas with the Rolling Kneebar!
 			Toehold|Crank that Soulja Boy
 			Other Leglocks|More ways to wreck knees
@@ -46,6 +86,7 @@ Moves
 			Gogoplata|Can only be pulled off while wearing rainbow tights
 			Guillotine|Removing people from consciousness since 1792
 			Rear-Naked Choke|The lion-killer
+			Triangle|Named after its creator, Marcos Triangle
 			Other Chokes|You can never have too many chokes
 		Gi Chokes|You look tired, you should get some sleep…
 			Back Choke|The finisher
@@ -77,58 +118,19 @@ Moves
 		Other Takedowns|Featuring the Double Reverse Russian Arm Twist
 	Concepts|The tiny details that make all the difference
 		Crossface|The Shoulder of Justice demands retribution!
-		Windshield Wiper|Legwork, hiding the legs, circling your hooks, etc.
 		Grip Breaks|Give them an inch and they'll take an arm (literally)
-		Active Posting|Copyright BJJ Scout
+		Taking The Back|Baby got back
+		Windshield Wiper|Legwork, hiding the legs, circling your hooks, etc.
 		Other Concepts|It's all about aligning your chi with your meridians
-Positions
-	Stand-up|Every fight starts standing up
-		2-on-1|Zangief's favorite tie-up
-		Collar Tie|The basic tie-up
-		Double Overhooks|Better practice your Greco
-		Double Underhooks|The dominant clinch
-		Over-under|The basic clinch
-		Other Tie-ups|Ties of the neck, bow, and fighter varieties
-	Guard|Where's your Jiu-Jitsu now playboy?
-		Butterfly Guard|Marcelo's favorite guard
-		Closed Guard|Still effective
-			Regular Closed Guard|The foundation
-			Rubber Guard|The white belt's favorite guard
-			Shawn Williams Guard|Underhooking your own leg and framing with your arms
-			Other Closed Guards|More ways to control from the bottom
-		De La Riva|The king of modern guards
-		Double Guard|Or as they call it, “scissoring”
-		Half Guard|Also known as being half passed
-			Regular Half Guard|You probably don't want to be there
-			Deep Half|Homer Simpson's favorite guard
-			Inverted Half Guard|Half Guard facing the legs
-			Knee Shield|Using your knee to control the distance
-			Reverse Half Guard|Reverse-sit back-step Half Guard
-			Other Half Guards|Three-quarter guard, four-fiths guard, seven-thirteenths guard, etc.
-		Reverse De La Riva|The queen of modern guards
-		Sit-up Guard|Also known as Koala Guard, Shin-to-shin guard, etc.
-		Spider Guard & Lasso|Voted “Most Annoying To Pass” three years in a row
-		Turtle|Don't let their slow demeanor fool you… Turtles can bite too!
-		Worm & Lapel Guard|And you thought Spider Guard was annoying
-		X-Guard & Single-Leg X|The most Xtreme guards
-		Other Guards|Mouthguards, bodyguards, lifeguards, etc.
-	Side Control|Feel the presh'
-	Knee On Belly|Make'em pay
-	North South|Yes, we know what it looks like
-	Mount|Total domination
-	Back|Choke coming in 3, 2, 1…
-		Regular Back Control|Your vanilla back control
-		Body Triangle|For those who like to slowly suck the life out of their opponent
-		Crab Ride|Back control with both hooks behind the knees
-		Crucifix|He didn't tap
-		Single Back|Back control with a single hook
-		The Truck|Grapevining one leg and hugging the other
-		Other Back Controls|I'm bringing sexy, baby got, in black
-	Leg Entanglements|Wait, is this your leg or mine?
-		50/50|Looks like we'll be here for a while
-		Ashi Garami|The standard IBJJF-legal leglock position
-		Inside Triangle|A.k.a. the 4/11, Saddle, and Knee Reap, Destroyer Of Worlds and Bringer Of Destruction
-		Outside Ashi Garami|Crossing over to the outside with your inside leg
-		Reverse Ashi|Switching around the hip-stepping foot and the hooking foot
-		Other Leg Entanglements|I'm 1/8th octopus on my mother's side
-	Other Positions|Half of these were created by Eddie Bravo
+Role
+	Attack|Initiating the move
+	Defense|Escaping & countering
+Type
+	AMAs|Question & Answer sessions
+	Breakdowns|In-depth analysis and breakdowns
+	Drills|Solo and partner exercises
+	Fights|Competition & tournament footage
+	Highlights|Highlight reels
+	News|News, round-ups, announcements, and more
+	Rolls|Friendly sparring sessions
+	Techniques|Instructionals, seminars, and technique videos
