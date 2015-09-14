@@ -172,13 +172,13 @@ $text: #444444;
     .icon-collapse{
       display: none;
     }
-    &.toggle-expanded{
-      .icon-expand{
-        display: none;
-      }
-      .icon-collapse{
-        display: block;
-      }
+  }
+  .toggle-expanded{
+    .icon-expand{
+      display: none;
+    }
+    .icon-collapse{
+      display: block;
     }
   }
   .menu-child-items{

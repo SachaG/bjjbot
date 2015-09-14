@@ -74,8 +74,31 @@
           font-weight: bold;
           font-size: 18px;
           border-bottom: 1px solid black(0.1);
+          label{
+            color: inherit;
+          }
         }
       }
     }
+  }
+  .menu-item{
+    label{
+      display: inline-block;
+      &.category-has-children{
+        cursor: pointer;
+        font-weight: bold;
+      }
+      &.category-no-children{
+        background: #efefef;
+        padding: 3px 5px;
+        border-radius: 3px;
+      }
+    }
+    .menu-items-toggle{
+      display: inline-block;
+    }
+  }
+  .menu-child-items{
+    margin-left: 9px;
   }
 }

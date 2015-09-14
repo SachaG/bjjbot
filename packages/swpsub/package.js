@@ -31,7 +31,9 @@ Package.onUse(function (api) {
   api.addFiles([
     'lib/menus.js',
     'lib/callbacks.js',
-    'lib/custom_fields.js'
+    'lib/icons.js',
+    'lib/custom_fields.js',
+    'lib/colors.js'
   ], ['client', 'server']);
 
   // client
@@ -42,6 +44,7 @@ Package.onUse(function (api) {
     'lib/client/stylesheets/_categories.scss',
     'lib/client/stylesheets/screen.scss',
 
+    'lib/client/templates/categories/category_input_item.html',
     'lib/client/templates/categories/post_categories.html',
     'lib/client/templates/categories/post_categories.js'
 

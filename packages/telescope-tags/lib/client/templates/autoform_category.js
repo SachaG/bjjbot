@@ -18,7 +18,8 @@ Template.afCategory_bootstrap3.helpers({
         parentId: category.parentId,
         template: "category_input_item",
         label: category.name,
-        isSelected: _.contains(selectedCategories, category._id)
+        isSelected: _.contains(selectedCategories, category._id),
+        data: category
       };
     });
     return menuItems;

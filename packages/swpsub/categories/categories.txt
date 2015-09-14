@@ -9,14 +9,14 @@ Positions
 	Guard|Where's your Jiu-Jitsu now playboy?
 		Butterfly Guard|Marcelo's favorite guard
 		Closed Guard|Still effective
-			Regular Closed Guard|The foundation
+			Regular Closed Guard|The foundation|Closed Guard
 			Rubber Guard|The white belt's favorite guard
 			Shawn Williams Guard|Underhooking your own leg and framing with your arms
 			Other Closed Guards|More ways to control from the bottom
 		De La Riva|The king of modern guards|DLR
 		Double Guard|Or as they call it, “scissoring”
-		Half Guard|Also known as being half passed|Half-guard, Halfguard
-			Regular Half Guard|You probably don't want to be there
+		Half Guard|Also known as being half passed
+			Regular Half Guard|You probably don't want to be there|Half-guard, Halfguard
 			Deep Half|Homer Simpson's favorite guard
 			Inverted Half Guard|Half Guard facing the legs
 			Knee Shield|Using your knee to control the distance|93 Guard,Z-Guard,Z Guard
@@ -62,7 +62,7 @@ Moves
 		Over-under|Getting an over-under on the legs
 		Toreando|Controlling both legs to pass
 		X-Pass|Getting a collar-and-pants grip and mule kick
-		Other Passes|The list goes on…
+		Other Passes|The list goes on…|Pass
 	Submissions|What you came here for
 		Armlocks|Your arm is mine
 			Americana|The white belt killer
@@ -108,7 +108,7 @@ Moves
 		Single-Leg Sweep|Standing up with a single leg
 		Stand-up Sweep|Standing up from X-Guard, Z-Guard, Single Leg X-Guard, etc.
 		Waiter Sweep|Waiter, there's a fly in my sweep!
-		Other Sweeps|Sweepstakes, sweep… Sorry, that's all I got
+		Other Sweeps|Sweepstakes, sweep… Sorry, that's all I got|Sweep
 	Takedowns|Let the bodies hit the floor
 		Arm Drag|Step 1: Grab arm. Step 2: Drag across
 		Double Leg|When one leg just isn't enough

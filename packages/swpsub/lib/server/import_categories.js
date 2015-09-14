@@ -21,7 +21,8 @@ var importCategories = function () {
       var nodeArray = node.data.split("|");
       var category = {
         name: nodeArray[0],
-        order: index
+        order: index,
+        hasChildren: node.children.length > 0
       };
 
       if (nodeArray.length >= 2) {
@@ -60,7 +61,7 @@ var importCategories = function () {
 
       node.inserted = true;
 
-      if (node.children) {
+      if (node.children.length > 0) {
         parseAndInsert(node);
       }
 
