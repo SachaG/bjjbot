@@ -70,10 +70,10 @@
     .menu-level-0{
       &>.menu-item-wrapper{
         .category-input-item{
+          width: 100%;
           font-weight: bold;
           font-size: 18px;
           border-bottom: 1px solid black(0.1);
-          padding-bottom: 5px;
         }
       }
     }
