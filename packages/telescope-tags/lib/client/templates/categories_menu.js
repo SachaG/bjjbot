@@ -13,10 +13,10 @@ Meteor.startup(function () {
       var categories = Categories.find({}, {sort: {order: 1, name: 1}}).fetch();
 
       // filter out categories with no items
-      // var menuItems = _.filter(categories, function (category){
-      //   return !!Counts.get(category.getCounterName());
-      // });
-      var menuItems = categories;
+      var menuItems = _.filter(categories, function (category){
+        return !!Counts.get(category.getCounterName());
+      });
+      // var menuItems = categories;
 
       menuItems = _.map(menuItems, function (category) {
         return {

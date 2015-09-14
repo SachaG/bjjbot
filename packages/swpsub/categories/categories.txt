@@ -16,7 +16,7 @@ Positions
 		De La Riva|The king of modern guards|DLR
 		Double Guard|Or as they call it, “scissoring”
 		Half Guard|Also known as being half passed
-			Regular Half Guard|You probably don't want to be there|Half-guard, Halfguard
+			Regular Half Guard|You probably don't want to be there|Half-guard,Halfguard,Half Guard
 			Deep Half|Homer Simpson's favorite guard
 			Inverted Half Guard|Half Guard facing the legs
 			Knee Shield|Using your knee to control the distance|93 Guard,Z-Guard,Z Guard
@@ -27,7 +27,7 @@ Positions
 		Spider Guard & Lasso|Voted “Most Annoying To Pass” three years in a row|Spider, Lasso
 		Turtle|Don't let their slow demeanor fool you… Turtles can bite too!
 		Worm & Lapel Guard|And you thought Spider Guard was annoying
-		X-Guard & Single-Leg X|The most Xtreme guards|1LX,SLX,Single Leg X,XGuard,X Guard
+		X-Guard & Single-Leg X|The most Xtreme guards|1LX,SLX,Single Leg X,Single-Leg X,XGuard,X Guard,X-Guard
 		Other Guards|Mouthguards, bodyguards, lifeguards, etc.
 	Side Control|Feel the presh'
 	Knee On Belly|Make'em pay
@@ -73,7 +73,7 @@ Moves
 			Straight Armlock|Did you just hear a pop?
 			Other Armlocks|More ways to break arms
 		Leglocks|I'll have that ankle to go, thank you
-			Ankle Lock|Just a pain move
+			Ankle Lock|Just a pain move|Footlock,Foot lock
 			Heelhook|Proceed with caution
 			Calf Lock|Don't try to tough it out
 			Kneebar|Bas with the Rolling Kneebar!
@@ -131,6 +131,8 @@ Type
 	Drills|Solo and partner exercises
 	Fights|Competition & tournament footage
 	Highlights|Highlight reels
-	News|News, round-ups, announcements, and more
+	Interviews|Interviews with your favorite grapplers
 	Rolls|Friendly sparring sessions
+	Shows|Grappling-related shows
 	Techniques|Instructionals, seminars, and technique videos
+	Trailers|Announcements, news, trailers, etc. 

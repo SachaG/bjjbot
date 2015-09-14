@@ -2,9 +2,12 @@ function detectCategories (data) {
 
   var title = data.title.toLowerCase();
   var categories = Categories.find().fetch();
+  var categoriesWithNoChildren = _.reject(categories, function (category) {
+    return category.hasChildren;
+  });
   var addedCategories = [];
 
-  categories.forEach(function (category) {
+  categoriesWithNoChildren.forEach(function (category) {
 
     var name = category.name.toLowerCase();
     var nameInTitle = title.indexOf(name) !== -1;
@@ -32,7 +35,7 @@ function detectCategories (data) {
       // });
 
       // only add if this is *not* an "other" category (i.e. catchall), 
-      // or if no other sibling categories have been previously added
+      // except if no other sibling categories have been previously added
       if (name.indexOf("other") === -1 || siblingCategories.length === 0) {
         // add current category to addedCategories
         addedCategories.push(category);
@@ -43,6 +46,9 @@ function detectCategories (data) {
 
 
   if (addedCategories.length > 0) {
+
+    // if any categories have been auto-detected, add the "Techniques" category
+    addedCategories.push(Categories.findOne({name: "Techniques"}));
 
     // loop over all added categories
     addedCategories.forEach(function (category) {
