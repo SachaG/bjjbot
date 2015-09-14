@@ -135,7 +135,9 @@ Template.menuItem.helpers({
     if (this.item.itemClass) {
       itemClass += " "+this.item.itemClass;
     }
-
+    if (this.item.isExpanded) {
+      itemClass += " menu-expanded";
+    }
     itemClass += " menu-level-" + this.level;
     
     return itemClass;
@@ -157,8 +159,8 @@ Template.menuComponent.events({
     e.preventDefault();
     var $menu = $(e.currentTarget).closest(".menu-collapsible");
     $menu.toggleClass("menu-expanded");
-    $menu.find(".js-menu-top-toggle").first().toggleClass("toggle-expanded");
-    $menu.find(".menu-wrapper").first().slideToggle('fast');
+    // $menu.find(".js-menu-top-toggle").first().toggleClass("toggle-expanded");
+    // $menu.find(".menu-wrapper").first().slideToggle('fast');
   },
   'click .menu-collapsible .js-menu-toggle': function (e) {
     e.preventDefault();
@@ -166,8 +168,8 @@ Template.menuComponent.events({
     $menuItem.toggleClass("menu-expanded");
 
     // menu item could contain multiple nested sub-menus, so always use first()
-    $menuItem.find(".js-menu-toggle").first().toggleClass("toggle-expanded");
-    $menuItem.find(".menu-child-items").first().slideToggle('fast');
+    // $menuItem.find(".js-menu-toggle").first().toggleClass("toggle-expanded");
+    // $menuItem.find(".menu-child-items").first().slideToggle('fast');
   
   }
 });
