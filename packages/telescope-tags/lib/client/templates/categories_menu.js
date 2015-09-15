@@ -10,13 +10,14 @@ Meteor.startup(function () {
         itemClass: 'item-never-active'
       }];
 
-      var categories = Categories.find({}, {sort: {order: 1, name: 1}}).fetch();
+      var menuItems = Categories.find({}, {sort: {order: 1, name: 1}}).fetch();
 
       // filter out categories with no items
-      var menuItems = _.filter(categories, function (category){
-        return !!Counts.get(category.getCounterName());
-      });
-      // var menuItems = categories;
+      if (Settings.get("hideEmptyCategories", false)) {
+        var menuItems = _.filter(categories, function (category){
+          return !!Counts.get(category.getCounterName());
+        });
+      }
 
       menuItems = _.map(menuItems, function (category) {
         return {
@@ -31,7 +32,6 @@ Meteor.startup(function () {
           data: category
         };
       });
-
       return defaultItem.concat(menuItems);
     },
     menuClass: function () {

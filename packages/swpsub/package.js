@@ -33,6 +33,7 @@ Package.onUse(function (api) {
     'lib/callbacks.js',
     'lib/icons.js',
     'lib/custom_fields.js',
+    'lib/views.js',
     'lib/colors.js'
   ], ['client', 'server']);
 
@@ -46,7 +47,9 @@ Package.onUse(function (api) {
 
     'lib/client/templates/categories/category_input_item.html',
     'lib/client/templates/categories/post_categories.html',
-    'lib/client/templates/categories/post_categories.js'
+    'lib/client/templates/categories/post_categories.js',
+    'lib/client/templates/categories/category_menu_item.html',
+    'lib/client/templates/categories/category_menu_item.js'
 
   ], ['client']);
 
