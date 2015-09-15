@@ -14,7 +14,7 @@ Meteor.startup(function () {
 
       // filter out categories with no items
       if (Settings.get("hideEmptyCategories", false)) {
-        var menuItems = _.filter(categories, function (category){
+        menuItems = _.filter(menuItems, function (category){
           return !!Counts.get(category.getCounterName());
         });
       }
