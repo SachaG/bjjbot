@@ -1,6 +1,16 @@
 var getRoute = function (item) {
   // if route is a Function return its result, else apply Router.path() to it
-  return typeof item.route === "function" ? item.route() : Router.path(item.route);
+  if (typeof item.route === "function") {
+    return item.route();
+  } else {
+    if (typeof Router !== "undefined") {
+      return Router.path(item.route);
+    } else if (typeof FlowRouter !== "undefined") {
+      return FlowRouter.path(item.route);
+    } else {
+      throw new Error("Please use Flow Router or Iron Router");
+    }
+  }
 };
 
 var filterMenuItems = function (menuItems) {
@@ -124,11 +134,12 @@ Template.menuItem.helpers({
     return this;
   },
   expandedClass: function () {
+    // return this.item.isExpanded? "menu-expanded" : "";
     return Template.instance().expand ? "menu-expanded" : "";
   },
   itemClass: function () {
     var itemClass = "";
-    var currentPath = Router.current().location.get().path ;
+    var currentPath = FlowRouter.current().path ;
 
     if (this.item.adminOnly) {
       itemClass += " item-admin";
@@ -162,11 +173,13 @@ Template.menuComponent.events({
     var $menuItem = $(e.currentTarget).closest(".js-menu-container");
 
     if ($menuItem.hasClass("menu-expanded")) {
+      // $menuItem.removeClass("menu-expanded");
       $menuItem.find(".js-menu-items").first().slideUp('fast', function () {
         $menuItem.removeClass("menu-expanded");
       });
       
     } else {
+      // $menuItem.addClass("menu-expanded");
       $menuItem.find(".js-menu-items").first().slideDown('fast', function () {
         $menuItem.addClass("menu-expanded");
       });

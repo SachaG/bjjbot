@@ -8,26 +8,31 @@ Template.category_menu_item.helpers({
 });
 
 Template.category_menu_item.events({
-  "click .js-category-toggle": function (event, instance) {
-    event.preventDefault();
-
+  "change .js-category-toggle": function (event, instance) {
+    
     var slug = instance.data.item.data.slug;
     var input = instance.$(":checkbox");
 
-    input.prop("checked", !input.prop("checked"))    
-    
-    if (Router.current().route.getName() !== "posts_categories") {
+    // use defer to make UI more responsive  
+    Meteor.defer(function () {
 
-      Router.go("posts_categories", {}, {query: 'cat[]='+slug});
-    
-    } else {
+      if (FlowRouter.getRouteName() !== "postsDefault") {
 
-      if (input.prop("checked")) {
-        Router.query.add('cat', slug);
+        FlowRouter.go("postsDefault", {}, {cat:[slug]});
+
       } else {
-        Router.query.remove('cat', slug);
+
+        if (input.prop("checked")) {
+          FlowRouter.addToQueryArray('cat', slug);
+
+        } else {
+          FlowRouter.removeFromQueryArray('cat', slug);
+
+        }
+
       }
-      
-    }
+
+    });
+
   }
 });

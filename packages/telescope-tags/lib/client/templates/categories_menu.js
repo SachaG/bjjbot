@@ -1,3 +1,11 @@
+var getRoute = function () {
+  FlowRouter.watchPathChange()
+  var categoryName = this.data.slug;
+  var currentQuery = _.clone(FlowRouter.current().queryParams);
+  var newQuery = _.extend(currentQuery, {cat: categoryName});
+  return FlowRouter.path("postsDefault", FlowRouter.current().params, newQuery);
+};
+
 Meteor.startup(function () {
   Template.categories_menu.helpers({
     hasCategories: function () {
@@ -5,10 +13,10 @@ Meteor.startup(function () {
     },
     menuItems: function () {
 
-      var activeCategories = Router.current().params.query.cat;
+      var activeCategories = FlowRouter.getQueryParam("cat");
 
       var defaultItem = [{
-        route: 'posts_default',
+        route: 'postsDefault',
         label: 'all_categories',
         itemClass: 'item-never-active'
       }];
@@ -31,19 +39,19 @@ Meteor.startup(function () {
         var isActive = _.contains(activeCategories, category.slug);
 
         return {
-          route: function () {
-            return Categories.getUrl(category);
-          },
+          route: getRoute,
           label: category.name+=" <span class=\"category-posts-count\">("+Counts.get(category.getCounterName())+")</span>",
           description: category.description,
           _id: category._id,
           parentId: category.parentId,
-          template: 'category_menu_item',
+          template: "category_menu_item",
           isExpanded: isExpanded,
           isActive: isActive,
+          itemClass: "category-"+category.slug,
           data: category
         };
       });
+
       return defaultItem.concat(menuItems);
     },
     menuClass: function () {

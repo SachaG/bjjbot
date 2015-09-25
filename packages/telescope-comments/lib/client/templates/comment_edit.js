@@ -1,8 +1,4 @@
 Template.comment_edit.helpers({
-  canEdit: function () {
-    var comment = this;
-    return Users.can.edit(Meteor.user(), comment);
-  },
   commentFields: function () {
     return Comments.simpleSchema().getEditableFields(Meteor.user());
   }
@@ -36,7 +32,7 @@ AutoForm.hooks({
       // TODO: find out why comment is undefined here
       comment = this.currentDoc;
       Events.track("edit comment", {'commentId': comment._id});
-      Router.go('post_page', {_id: comment.postId});
+      FlowRouter.go("postPage", {_id: comment.postId});
     },
 
     onError: function(formType, error) {
@@ -56,7 +52,7 @@ Template.comment_edit.events({
     e.preventDefault();
 
     if(confirm("Are you sure?")){
-      Router.go("/");
+      FlowRouter.go("postsDefault");
       Meteor.call("deleteCommentById", comment._id, function(error) {
         if (error) {
           console.log(error);
