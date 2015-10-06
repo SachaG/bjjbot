@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "tabdown": {
+    "tabdown-sacha": {
       "version": "0.0.3"
     }
   }

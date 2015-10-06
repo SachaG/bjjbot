@@ -20,6 +20,7 @@ Positions
 			Deep Half|Homer Simpson's favorite guard
 			Inverted Half Guard|Half Guard facing the legs
 			Knee Shield|Using your knee to control the distance|93 Guard,Z-Guard,Z Guard
+			Lockdown|Double-entanglement on the trapped foot
 			Reverse Half Guard|Reverse-sit back-step Half Guard
 			Other Half Guards|Three-quarter guard, four-fiths guard, seven-thirteenths guard, etc.
 		Reverse De La Riva|The queen of modern guards|Spiral Guard, RDLR
@@ -51,17 +52,18 @@ Positions
 	Other Positions|Half of these were created by Eddie Bravo
 Moves
 	Passes|Like a knife through butter
-		Back-step|Back-stepping your free leg into a reverse sit
-		Double-under|Under-hooking both legs
+		Back-step|Back-stepping your free leg into a reverse sit|Backstep,Back step
+		Double-under|Under-hooking both legs|Double under,Double underhook
 		Folding Pass|Pinning both legs together to one side with your hips
 		Hug Pass|Over-hooking both legs tight
-		Knee Cut|Sliding through by cutting with your knee
+		Knee Cut|Sliding through by cutting with your knee|Kneecut,Kneeslice,Knee Slice,Cross Knee
 		Leg Drag|Dragging both legs to one side
 		Leg Lace|Threading your arm through the legs
 		Long Step|Freeing your leg by back-stepping it out of the guard
-		Over-under|Getting an over-under on the legs
-		Toreando|Controlling both legs to pass
-		X-Pass|Getting a collar-and-pants grip and mule kick
+		Over-under|Getting an over-under on the legs|Over under
+		Stomp Pass|Stomping or stepping on the leg
+		Toreando|Controlling both legs to pass|Toreada,Toreador
+		X-Pass|Getting a collar-and-pants grip and mule kick|XPass
 		Other Passes|The list goes on…|Pass
 	Submissions|What you came here for
 		Armlocks|Your arm is mine
@@ -79,17 +81,19 @@ Moves
 			Kneebar|Bas with the Rolling Kneebar!
 			Toehold|Crank that Soulja Boy
 			Other Leglocks|More ways to wreck knees
-		Chokes|Time to switch off the lights
+		Chokes|Switch off the lights
 			Anaconda|A real anaconda would probably just eat you, not choke you
 			Arm Triangle|Choke'em with their own arm
 			Brabo & Darce|Also includes neckties of various nationalities
 			Gogoplata|Can only be pulled off while wearing rainbow tights
 			Guillotine|Removing people from consciousness since 1792
 			Rear-Naked Choke|The lion-killer
+			Reverse Triangle|Elgnairt
 			Triangle|Named after its creator, Marcos Triangle
 			Other Chokes|You can never have too many chokes
 		Gi Chokes|You look tired, you should get some sleep…
 			Back Choke|The finisher
+			Clock Choke|Time to go to sleep!
 			Cross-Collar Choke|Roger Gracie's favorite choke
 			Loop Choke|The gi-llotine
 			Other Gi Chokes|The ones where you choke them with their own belt
@@ -119,7 +123,7 @@ Moves
 	Concepts|The tiny details that make all the difference
 		Crossface|The Shoulder of Justice demands retribution!
 		Grip Breaks|Give them an inch and they'll take an arm (literally)
-		Taking The Back|Baby got back
+		Taking The Back|Baby got back|Back Take,Backtake,Take the back
 		Windshield Wiper|Legwork, hiding the legs, circling your hooks, etc.
 		Other Concepts|It's all about aligning your chi with your meridians
 Role

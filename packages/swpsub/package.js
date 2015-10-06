@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Npm.depends({
-  'tabdown': '0.0.3'
+  'tabdown-sacha': '0.0.3'
 });
 
 Package.onUse(function (api) {
@@ -59,7 +59,7 @@ Package.onUse(function (api) {
     'lib/server/import_categories.js'
   ], ['server']);
 
-  api.addFiles('categories/categories.txt', 'server', { isAsset: true });
+  api.addAssets('categories/categories.txt', 'server');
   // i18n languages (must come last)
 
   api.addFiles([
