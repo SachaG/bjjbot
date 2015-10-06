@@ -1,4 +1,4 @@
-Template.category_menu_item.events({
+Template.categories_menu_item.events({
   "click .js-custom-category-toggle": function (event, instance) {
     
     event.preventDefault();

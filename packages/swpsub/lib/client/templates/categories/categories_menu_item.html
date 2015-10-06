@@ -1,9 +1,9 @@
-<template name="custom_category_menu_item">
+<template name="custom_categories_menu_item">
   {{#if showMultiple}}
     <span class="menu-sub-level">
       <span class="menu-label js-custom-category-toggle">
         <label class="category-label">
-          <input type="checkbox" {{isChecked}} name="{{item._id}}" class="category-checkbox"/> 
+          <input type="checkbox" {{isChecked}} class="category-checkbox" name="{{item.data._id}}"/> 
           {{{itemLabel}}}
         </label>
       </span>

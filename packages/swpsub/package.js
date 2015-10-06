@@ -48,8 +48,8 @@ Package.onUse(function (api) {
     'lib/client/templates/categories/category_input_item.html',
     'lib/client/templates/categories/post_categories.html',
     'lib/client/templates/categories/post_categories.js',
-    'lib/client/templates/categories/category_menu_item.html',
-    'lib/client/templates/categories/category_menu_item.js'
+    'lib/client/templates/categories/categories_menu_item.html',
+    'lib/client/templates/categories/categories_menu_item.js'
 
   ], ['client']);
 
