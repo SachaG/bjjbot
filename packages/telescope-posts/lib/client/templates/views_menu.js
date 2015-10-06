@@ -7,6 +7,10 @@ var getMenuItems = function () {
     return (item.adminOnly && !Users.is.admin(Meteor.user())) || (!!Settings.get('postViews') && !_.contains(Settings.get('postViews'), item.label));
   });
 
+  viewableItems = _.map(viewableItems, function (item) {
+    item.itemClass = "view-"+item.label;
+    return item;
+  });
   return viewableItems; 
 };
 
