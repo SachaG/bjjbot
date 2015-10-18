@@ -71,15 +71,17 @@
 .top-nav{
 	.header{
 		height: 60px;
-		padding: 0 20px;
+		padding: 5px 20px;
 		margin-bottom:$grid-margin;
-		position: relative;
+		@include medium-large{
+			position: relative;
+		}
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
 		@include small{
-			padding: 0 10px;
+			padding: 5px 10px;
 		}
 		.header-submodule{
 			flex-shrink: 0;
@@ -110,6 +112,10 @@
 			text-align:center;
 			color:white;
 			order: 2;
+			height: 100%;
+			.tagline{
+				display: none;
+			}
 			.logo-text{
 				@include small{
 					font-size: 18px;
@@ -124,6 +130,7 @@
 		}
 		.logo-image{
 			line-height: 1;
+			height: 100%;
 			a{
 				display:inline-block;
 				background: no-repeat center center;

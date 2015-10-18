@@ -1,7 +1,7 @@
 Package.describe({
   name: 'telescope:lib',
   summary: 'Telescope libraries.',
-  version: '0.25.2',
+  version: '0.25.3',
   git: "https://github.com/TelescopeJS/Telescope.git"
 });
 
@@ -10,13 +10,13 @@ Package.onUse(function (api) {
   api.versionsFrom(['METEOR@1.0']);
   
   var packages = [
-    'meteor-base',
+    'meteor-base@1.0.1',
     'mongo',
-    'blaze-html-templates',
+    'blaze-html-templates@1.0.1',
     'jquery',
     'session',
     'tracker',
-    'standard-minifiers',
+    'standard-minifiers@1.0.1',
     'service-configuration',
     'accounts-ui',
     'accounts-base',
@@ -73,7 +73,7 @@ Package.onUse(function (api) {
     'tmeasday:publish-counts@0.7.2',
     // 'dburles:iron-router-query-array@1.0.1'
     'utilities:onsubscribed@0.1.2',
-    'utilities:menu@0.1.0'
+    'utilities:menu@0.1.1'
   ];
 
   api.use(packages);
