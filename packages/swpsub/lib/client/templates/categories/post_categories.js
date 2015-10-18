@@ -13,7 +13,6 @@ Template.post_categories.helpers({
         parentId: category.parentId
       };
     });
-    console.log(menuItems)
     return menuItems;
 
   }

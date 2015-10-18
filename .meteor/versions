@@ -129,6 +129,7 @@ spiderable@1.0.9
 srp@1.0.4
 standard-app-packages@1.0.6
 standard-minifiers@1.0.1
+swpsub@0.1.0
 tap:i18n@1.7.0
 telescope:api@0.25.2
 telescope:comments@0.25.2
@@ -164,7 +165,7 @@ telescope:tags@0.25.2
 telescope:theme-base@0.25.2
 telescope:update-prompt@0.25.2
 telescope:users@0.25.2
-telescope:zeiss@0.1.17
+telescope:zeiss@0.2.0
 templating@1.1.4
 templating-tools@1.0.0
 tmeasday:publish-counts@0.7.2
@@ -178,7 +179,7 @@ useraccounts:core@1.12.4
 useraccounts:flow-routing@1.12.4
 useraccounts:unstyled@1.12.4
 utilities:avatar@0.9.2
-utilities:menu@0.1.0
+utilities:menu@0.1.1
 utilities:onsubscribed@0.1.2
 webapp@1.2.2
 webapp-hashing@1.0.5

@@ -39,7 +39,6 @@ var fillEmbedlyData = function (instance) {
           $bodyField.val(data.description);
 
         data.url = url;
-        
         Telescope.callbacks.run("afterEmbedlyPrefill", data);
 
       }

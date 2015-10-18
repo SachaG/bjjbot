@@ -1,5 +1,4 @@
 function detectCategories (data) {
-
   var title = data.title.toLowerCase();
   var categories = Categories.find().fetch();
   var categoriesWithNoChildren = _.reject(categories, function (category) {

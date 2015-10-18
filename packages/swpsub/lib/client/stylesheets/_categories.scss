@@ -1,13 +1,25 @@
+.menu-collapsible{
+  .menu-items-toggle{
+    border-color: #ccc;
+    svg{
+      fill: $red;
+    }
+  }  
+}
+
 .categories-menu {
+  .item-never-active{
+    display: none;
+  }
   .menu-level-0{
     margin-bottom: 30px;
-    &>.menu-item-wrapper{
+    &>.menu-item-label-wrapper{
       border-bottom: 1px solid white(0.2);
       padding-bottom: 5px;
       .menu-items-toggle, input, .category-posts-count{
         display: none;
       }
-      .menu-label{
+      .menu-item-label{
         font-size: 18px;
         display: block;
         font-weight: normal;
@@ -15,20 +27,56 @@
       }
     }
     &>.menu-child-items{
-      display: block;
+      display: block !important;
       border: none;
       margin-left: 0;
       padding-left: 0;
     }
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
   .menu-level-1{
 
-  }
+  }  
 }
 
 .category-heading-wrapper{
   padding: 0;
   background: none;
+  .category-heading{
+    border-radius: 0;
+    background: $grey;
+    position: relative;
+    margin-right: 2px;
+    &:after{
+      content: "+";
+      background: #fff;
+      color: #ccc;
+      // border: 2px solid white;
+      border-radius: 100%;
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      font-weight: bold;
+      display: block;
+      position: absolute;
+      z-index: 1000;
+      top: 50%;
+      right: -15px;
+      margin-top: -15px;
+      font-size: 30px;
+      line-height: 32px;
+    }
+    &:last-child:after{
+      display: none;
+    }
+  }
+  .category-parents{
+    display: none;
+  }
+  .category-description{
+  }
 }
 
 .category-parents{
@@ -68,7 +116,7 @@
 .category-input{
   .categories-menu{
     .menu-level-0{
-      &>.menu-item-wrapper{
+      &>.menu-item-label-wrapper{
         .category-input-item{
           width: 100%;
           font-weight: bold;
@@ -96,9 +144,44 @@
     }
     .menu-items-toggle{
       display: inline-block;
+      margin-right: 5px;
     }
   }
   .menu-child-items{
-    margin-left: 9px;
+    margin-left: 13px;
+  }
+}
+
+.dark-bg .menu-collapsible{
+  .menu-child-items, .menu-items{
+    border-color: #eee;
+  }
+}
+
+.post-categories{
+  .menu-item{
+    margin-bottom: 5px;
+    &.menu-level-0{
+      margin-bottom: 10px;
+      &>.menu-item-label-wrapper{
+        .menu-item-label{
+          background: none;
+          padding: 0;
+        }
+      }
+      &>.menu-child-items{
+        margin-top: 0;
+      }
+    }
+  }
+  .menu-child-items{
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .menu-item-label{
+    background: $grey;
+    border-radius: 3px;
+    padding: 3px 6px;
+    display: inline-block;
   }
 }

@@ -32,6 +32,7 @@ Package.onUse(function (api) {
     'lib/menus.js',
     'lib/callbacks.js',
     'lib/icons.js',
+    'lib/modules.js',
     'lib/custom_fields.js',
     'lib/views.js',
     'lib/colors.js'
@@ -41,6 +42,7 @@ Package.onUse(function (api) {
 
   api.addFiles([
     'lib/client/stylesheets/_mixins.scss',
+    'lib/client/stylesheets/_posts.scss',
     'lib/client/stylesheets/_global.scss',
     'lib/client/stylesheets/_categories.scss',
     'lib/client/stylesheets/screen.scss',

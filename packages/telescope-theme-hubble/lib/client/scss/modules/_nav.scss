@@ -5,9 +5,13 @@
 //		b. Side nav
 
 .header{
-	background-color:$highlight-color;
-	position:relative;
 	z-index: 100;
+	@include small{
+		box-shadow: 0px 1px 3px black(0.2);
+	}
+	@include medium-large{
+		position:relative;
+	}
 }
 .logo{
 	line-height: 1;

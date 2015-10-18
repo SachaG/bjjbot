@@ -1,4 +1,4 @@
-var tabdown = Npm.require('tabdown');
+var tabdown = Npm.require('tabdown-sacha');
 
 /* -------------- Standard sub-categories -------------- */
 

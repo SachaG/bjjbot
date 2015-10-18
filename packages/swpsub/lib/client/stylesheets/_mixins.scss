@@ -38,3 +38,7 @@ $medium-break: 800px;
 @function white($opacity){
   @return rgba(255,255,255,$opacity);
 }
+
+$regular: 300;
+$bold: 500;
+$bolder: 800;

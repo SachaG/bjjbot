@@ -1,48 +1,42 @@
 Template.categories_menu_item.events({
-  "click .js-custom-category-toggle": function (event, instance) {
-    
-    event.preventDefault();
+  "change .js-custom-category-toggle": function (event, instance) {
 
     var slug = instance.data.item.data.slug;
     var input = instance.$(":checkbox");
-    var currentSlugs = Router.current().params.query.cat;
+    var currentSlugs = FlowRouter.getQueryParam("cat");
     var slugsToRemove = [];
     var slugsToAdd = [];
 
-    input.prop("checked", !input.prop("checked"))    
-    
-    if (Router.current().route.getName() !== "posts_categories") {
+    Meteor.defer(function () {
 
-      Router.go("posts_categories", {}, {query: 'cat[]='+slug});
-    
-    } else {
+      if (FlowRouter.getRouteName() !== "postsDefault") {
 
-      if (input.prop("checked")) {
-
-        // uncheck and remove slug for all other categories in the same subgroup
-        input.parents(".menu-level-0").find(".category-checkbox").not("[name="+instance.data.item._id+"]").each(function () {
-          $(this).prop("checked", false);
-          slugsToRemove.push(Categories.findOne($(this).attr("name")).slug);
-        });
-        
-        slugsToAdd.push(slug);
-
+        FlowRouter.go("postsDefault", {}, {cat: [slug]});
+      
       } else {
+
+        if (input.prop("checked")) {
+
+          // uncheck and remove slug for all other categories in the same subgroup
+          input.parents(".menu-level-0").find(".category-checkbox").not("[name="+instance.data.item._id+"]").each(function () {
+            $(this).prop("checked", false);
+            slugsToRemove.push(Categories.findOne($(this).attr("name")).slug);
+          });
+          
+          slugsToAdd.push(slug);
+
+        } else {
+          
+          slugsToRemove.push(slug);
         
-        slugsToRemove.push(slug);
-      
+        }
+
+        var slugsArray = _.difference(currentSlugs, slugsToRemove).concat(slugsToAdd);
+
+        FlowRouter.go("postsDefault", {}, {cat: slugsArray});
+
       }
-      
-      // console.log(currentSlugs)
-      // console.log(slugsToRemove)
-      // console.log(slugsToAdd)
 
-      var query = _.difference(currentSlugs, slugsToRemove).concat(slugsToAdd).map(function (slug) {
-        return "cat[]="+slug;
-      }).join("&");
-
-      Router.go("posts_categories", {}, {query: query});
-
-    }
+    });
   }
 });

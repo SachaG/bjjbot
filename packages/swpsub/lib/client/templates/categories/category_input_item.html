@@ -2,7 +2,10 @@
   {{#if childMenuItems}}
     <div class="category-input-item js-menu-toggle" id="{{item._id}}">
       <label class="category-has-children">
-        <a class="menu-items-toggle " href="#">{{{icon "expand"}}}{{{icon "collapse"}}}</a>
+        <a class="menu-items-toggle js-menu-toggle" href="#">
+          <span class="menu-icon-expand">{{> menuIconExpand}}</span>
+          <span class="menu-icon-collapse">{{> menuIconCollapse}}</span>
+        </a>
         {{item.label}} 
       </label>
     </div>
