@@ -4,6 +4,7 @@ Positions
 		Collar Tie|The basic tie-up
 		Double Overhooks|Better practice your Greco
 		Double Underhooks|The dominant clinch
+		Front Headlock|Not to be confused with the schoolyard kind
 		Over-under|The basic clinch
 		Other Tie-ups|Ties of the neck, bow, and fighter varieties
 	Guard|Where's your Jiu-Jitsu now playboy?
@@ -101,6 +102,7 @@ Moves
 	Sweeps|Sweep the leg!
 		Babybolo|The standard De La Riva back-take
 		Berimbolo|The modern De La Riva back-take
+		Butterfly Sweep|Float like a butterfly, sting like a butterfly
 		Dummy Sweep|Hook both legs, and push them over
 		Hammer Sweep|The Sickle Sweep's cousin
 		Hook Sweep|Marcelo's favorite sweep

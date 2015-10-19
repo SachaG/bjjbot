@@ -48,13 +48,14 @@ AutoForm.hooks({
       this.template.$('button[type=submit]').removeClass('loading');
       this.template.$('.disabled').removeClass("disabled").prop("disabled", false);
 
-      Messages.flash(error.message.split('|')[0], 'error'); // workaround because error.details returns undefined
-      Messages.clearSeen();
       // $(e.target).removeClass('disabled');
       if (error.error === "603") {
-        var dupePostId = error.reason.split('|')[1];
-        FlowRouter.go('postPage', {slug: '_', _id: dupePostId});
+        var dupePostId = error.details;
+        FlowRouter.go('postPage', {_id: dupePostId});
       }
+
+      Messages.flash(error.message.split('|')[0], 'error'); // workaround because error.details returns undefined
+      Messages.clearSeen();
     }
 
   }
