@@ -45,15 +45,19 @@ Package.onUse(function (api) {
     'lib/client/stylesheets/_posts.scss',
     'lib/client/stylesheets/_global.scss',
     'lib/client/stylesheets/_categories.scss',
+    'lib/client/stylesheets/_playlists.scss',
     'lib/client/stylesheets/screen.scss',
 
     'lib/client/templates/categories/category_input_item.html',
     'lib/client/templates/categories/post_categories.html',
     'lib/client/templates/categories/post_categories.js',
     'lib/client/templates/categories/categories_menu.html',
-    'lib/client/templates/categories/afCategory_bootstrap3.html',
+    'lib/client/templates/categories/autoform_category.html',
     'lib/client/templates/categories/categories_menu_item.html',
-    'lib/client/templates/categories/categories_menu_item.js'
+    'lib/client/templates/categories/categories_menu_item.js',
+
+    'lib/client/templates/playlists.html',
+    'lib/client/templates/post_list_title.html'
 
   ], ['client']);
 

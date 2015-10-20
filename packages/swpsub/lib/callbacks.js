@@ -25,13 +25,12 @@ function detectCategories (data) {
     // if category name or one of its aliases is contained within post title
     if (nameInTitle || aliasInTitle) {
 
-      // NOTE: do not loop through parents after all
       // loop through parents and add them too, unless they're excluded or already in the array
-      // category.getParents().reverse().forEach(function (category) {
-      //   if (!_.contains(excludedCategories, category.name) && !_.findWhere(addedCategories, {_id: category._id}) ) {
-      //     addedCategories.push(category);
-      //   }
-      // });
+      category.getParents().reverse().forEach(function (category) {
+        if (!_.findWhere(addedCategories, {_id: category._id}) ) {
+          addedCategories.push(category);
+        }
+      });
 
       // only add if this is *not* an "other" category (i.e. catchall), 
       // except if no other sibling categories have been previously added
@@ -49,20 +48,22 @@ function detectCategories (data) {
     // if any categories have been auto-detected, add the "Techniques" category
     addedCategories.push(Categories.findOne({name: "Techniques"}));
 
-    // loop over all added categories
-    addedCategories.forEach(function (category) {
+    Session.set("prefilledCategories", addedCategories);
 
-      // check box
-      $("[value="+category._id+"]").prop("checked", true);
+    // // loop over all added categories
+    // addedCategories.forEach(function (category) {
 
-      // loop over all parents (except root categories, who are already expanded) and expand their menu tree
-      _.reject(category.getParents(), function(parentCategory){
-        return typeof parentCategory.parentId === "undefined";
-      }).forEach(function (parentCategory) {
-        $("#"+parentCategory._id).closest(".menu-item-wrapper").find(".js-menu-toggle").not(".toggle-expanded").first().click();
-      });
+    //   // check box
+    //   $("[value="+category._id+"]").prop("checked", true);
 
-    });
+    //   // loop over all parents (except root categories, who are already expanded) and expand their menu tree
+    //   _.reject(category.getParents(), function(parentCategory){
+    //     return typeof parentCategory.parentId === "undefined";
+    //   }).forEach(function (parentCategory) {
+    //     $("#"+parentCategory._id).closest(".menu-item-wrapper").find(".js-menu-toggle").not(".toggle-expanded").first().click();
+    //   });
+
+    // });
 
     var $controls = $("[name=url").parents(".controls");
     var categoriesMarkup = addedCategories.map(function (category) {

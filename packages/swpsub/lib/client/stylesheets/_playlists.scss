@@ -1,0 +1,22 @@
+.playlists{
+  margin-bottom: $grid-margin;
+  .playlists-grid{
+    display: flex;
+  }
+  .playlist{
+    margin-right: $grid-margin;
+    &:last-child{
+      margin-right: 0;
+    }
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.section-title{
+  border-bottom: 2px solid #333;
+  font-size: 24px;
+  margin-bottom: $grid-margin;
+}

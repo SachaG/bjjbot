@@ -26,6 +26,10 @@ var fillEmbedlyData = function (instance) {
         return;
       }
       if (data) {
+        
+        console.log("received data:")
+        console.log(data)
+
         // set thumbnail and fill in thumbnailUrl field
         $img.attr('src', data.thumbnailUrl);
         $thumbnailUrlField.val(data.thumbnailUrl);
