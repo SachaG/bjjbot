@@ -152,6 +152,7 @@ telescope:notifications@0.25.3
 telescope:pages@0.25.3
 telescope:post-by-feed@0.25.3
 telescope:posts@0.25.3
+telescope:prerender@0.25.3
 telescope:releases@0.25.3
 telescope:rss@0.25.3
 telescope:scoring@0.25.3
