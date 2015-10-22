@@ -1,6 +1,6 @@
 Package.describe({
-  name: "swpsub",
-  summary: "SweepSubmit package",
+  name: "bjjbot",
+  summary: "BJJBot package",
   version: "0.1.0"
   // git: "https://github.com/TelescopeJS/telescope-releases.git"
 });

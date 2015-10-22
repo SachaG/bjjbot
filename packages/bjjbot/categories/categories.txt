@@ -12,7 +12,7 @@ Positions
 		Closed Guard|Still effective
 			Regular Closed Guard|The foundation|Closed Guard
 			Rubber Guard|The white belt's favorite guard
-			Shawn Williams Guard|Underhooking your own leg and framing with your arms
+			Shawn Williams Guard|Overhooking your own leg and framing with your arms
 			Other Closed Guards|More ways to control from the bottom
 		De La Riva|The king of modern guards|DLR
 		Double Guard|Or as they call it, “scissoring”
